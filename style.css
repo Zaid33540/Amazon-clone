@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+body{
+    background-color:  #e2e7e6;;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url('amazon_logo.png');
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.border{
+    border: 1px solid transparent;
+}
+.border:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+/* box-2 */
+.nav-address{
+    padding: 0 8px 0 6px;
+}
+.add-first{
+color:#CCCCCC;
+font-size: 0.85rem;
+margin-left: 15px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/* search bar -Box-3 */
+.nav-search{
+    display: flex; 
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+.nav-search:hover{
+    outline: 3px solid #febd68;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+.search-input{
+     width: 100%; /*----> it will help it to occupy remaining area in it's flex container */
+     font-size: 1rem;
+     border: none; /*----> it will help it to occupy same height as select has as it also have border:none */
+     outline: none;
+} 
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color:#febd68;
+    border-top-right-radius: 4px ;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+/* BOX-4 -LANGUAGE */
+.nav-language{
+    /* margin-left: 25px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.nav-language p{
+    font-size: 1rem;
+   
+}
+.nav-language i{
+    color: gray;
+    font-size: 0.7rem;
+   
+}
+.lang-img{
+    width: 25px;
+    margin-top: 2px;
+    
+}
+.lang-img img{
+    width: 100%;
+}
+
+/* BOX-5 Sing-in */
+.main{
+   
+    background-color: white;
+    width: 470px;
+    height: 360px;
+    position: absolute;
+    right: 65px;
+    margin-top: 12px;;
+    /* border: 2px solid yellow; */
+    z-index: 1;
+    display: none;
+    border-radius: 5px;
+}
+.shape{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    /* border:2px solid yellow; */
+    transform: rotate(45deg);
+    top: -7.5px;
+    left: 325px;   
+    
+}
+
+/* Sin in button */
+.sign{
+    background-color: rgb(255, 217, 0);
+    border: none;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+    left: 135px;
+    border-radius: 10px;
+}
+.sign a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-sign-in:hover .main {
+    transition: transform 0.3s;
+    display: flex;
+}
+
+.newC{
+    display: flex;
+    position: absolute;
+    top: 58px;
+    left: 175px;
+
+}
+.nav-sign-in{
+    padding: 5px;
+}
+.vertical{
+    width: 0.5px;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.5;
+}
+.account{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    position: absolute;
+    top: 100px;
+    right: 15px;
+}
+.account a{
+    display: block;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+.account a:hover{
+    text-decoration: underline;
+}
+span{
+    font-size: 0.85rem;
+}
+.nav-second{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* BOX-6 RETURN */
+.nav-return{
+    padding: 5px;
+}
+
+
+/* BOX-7 CART */
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 5px;
+}
+
+
+/* PANEL */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+    padding: 9.5px;
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* IMAGE-SECTION */
+.image-container{
+position: relative;
+/* height: 50vh; */
+}
+.image-list{
+    display: flex;
+}
+.image-items{
+min-width: 100%;
+transition: transform 0.5s;
+}
+.image-items img{
+width: 100%;
+height: 100%;
+}
+
+/* SLIDER-BUTTONS */
+.slider-btn{
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2px;
+}
+.btn{
+    padding: 100px 25px;
+    font-size: 3rem;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+.btn:focus{
+    border: 3px solid rgb(47, 101, 151);
+    border-radius: 5px;
+    box-shadow: -2px -2px 2px  white,
+    2px 2px 2px white;
+    
+}
+
+/* HERO-MESSAGE */
+
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 385px;
+    width: 80%;
+    margin-left:10% ;
+}
+.hero-msg a{
+    color: #007185;
+}
+
+/* MATERIAL SECTION */
+.shop-section{
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   
+   background: transparent;
+   background-color: #e2e7e6;
+   /* opacity: ; */
+}
+.Box{
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content  p{
+    color: #007185;
+}
+.box-content:hover p{
+    color: rgb(231, 80, 80);
+}
+
+/* FOOTER */
+footer{
+    position: relative;
+    bottom: -760px;
+}
+
+.foot-panel1{
+
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.foot-panel2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color: white;
+    height: 480px;
+}
+.foot-panel2 p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.foot-panel2 a{
+    margin-top: 10px;
+    font-size: 1rem;
+    display: block;
+    text-decoration: none;
+    color: #dddddd;
+}
+.foot-panel2 a:hover{
+    text-decoration: underline;
+}
+hr{
+    height: 0.01px;
+    color: #dddddd;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    /* border-top: 0.5px solid #dddddd; */
+}
+.logo{
+    background-image: url('amazon_logo.png');
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    background-color:#0f1111;
+    color: white;
+    /* display: flex; */
+    height: 80px;
+}
+.pages{
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 25px;
+}
+.pages a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.pages a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    padding-top: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+}
